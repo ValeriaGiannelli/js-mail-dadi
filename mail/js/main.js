@@ -8,9 +8,10 @@ console.log(mailList);
 const mailUser = prompt("Inserisci la tua mail:");
 console.log("la mail che ha inserito l'utente è:", mailUser);
 
-// controllare che la sua mail sia nella lista:
+// creo una variabile dove salverò il dato che uscirà dal primo ciclo FOR
 let presence;
 
+// controllare che la sua mail sia nella lista:
 // estraggo i singoli elementi della lista e li confronto con la mail della persona
 for(i = 0; i < mailList.length; i++){
     console.log(mailList[i]);
