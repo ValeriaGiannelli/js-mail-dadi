@@ -11,6 +11,9 @@ console.log("la mail che ha inserito l'utente è:", mailUser);
 // creo una variabile dove salverò il dato che uscirà dal primo ciclo FOR
 let presence;
 
+// prendo gli elementi della pagina
+
+
 // controllare che la sua mail sia nella lista:
 // estraggo i singoli elementi della lista e li confronto con la mail della persona
 for(i = 0; i < mailList.length; i++){
