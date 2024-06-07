@@ -16,16 +16,19 @@ const showPcNumber = document.getElementById("pc_number");
 const showResult = document.getElementById("result");
 
 // aggiungo agli elementi i numeri random
-showUserNumber.innerHTML = `Il numero della persona è: ${userNumber}`;
+showUserNumber.innerHTML = `Il tuo numero è: ${userNumber}`;
 showPcNumber.innerHTML = `Il numero del PC è: ${pcNumber}`;
 
 // confronto i due numeri:
 
 if(userNumber > pcNumber){ // se numero utente più alto -> scrivi "Utente ha vinto"
+    showResult.innerText = "Hai vinto!";
     console.log("Hai vintooo!");
 } else if(userNumber < pcNumber){ // se numero utente più basso -> "Ha vinto il PC"
+    showResult.innerText = "Ha vinto il PC (sorry, not sorry)";
     console.log("Ha vinto il PC");
 } else { //altrimenti il risultato è pari
+    showResult.innerText = "Pari patta";
     console.log("Pari patta");
 }
 
