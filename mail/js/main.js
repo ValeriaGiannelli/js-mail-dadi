@@ -18,6 +18,9 @@ console.log(showParty);
 const showNotParty = document.querySelector(".not_party");
 console.log(showNotParty);
 
+const welcomeName = document.getElementById("welcome_name");
+const notWelcomeName = document.getElementById("not_welcome_name");
+
 // controllare che la sua mail sia nella lista:
 // estraggo i singoli elementi della lista e li confronto con la mail della persona
 for(i = 0; i < mailList.length; i++){
@@ -34,9 +37,11 @@ for(i = 0; i < mailList.length; i++){
 // Capire se la ricerca precedente mi ha dato un riscontro positivo o negativo
 if(presence === "Sei invitato"){  // se nella ricerca di prima la variabile si è "riempita" stampo "benvenuto alla festa"
     showParty.classList.add("show");
+    welcomeName.innerHTML = `Welcome to the party ${mailUser} (or not?)`; 
     console.log("Benvenuto alla festa!!")
 } else { // se la mail non corrisponde a nessuno degli elementi e quindi la variabile è rimasta "undefine" allora stampa "Non sei in lista"
     showNotParty.classList.add("show");
+    notWelcomeName.innerHTML = `I am sorry ${mailUser} but:`; 
     console.log("Mi dispiace ma non sei in lista")
 }
 
