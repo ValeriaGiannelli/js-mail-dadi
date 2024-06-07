@@ -12,7 +12,11 @@ console.log("la mail che ha inserito l'utente è:", mailUser);
 let presence;
 
 // prendo gli elementi della pagina
+const showParty = document.querySelector(".party");
+console.log(showParty);
 
+const showNotParty = document.querySelector(".not_party");
+console.log(showNotParty);
 
 // controllare che la sua mail sia nella lista:
 // estraggo i singoli elementi della lista e li confronto con la mail della persona
