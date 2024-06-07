@@ -37,11 +37,11 @@ for(i = 0; i < mailList.length; i++){
 // Capire se la ricerca precedente mi ha dato un riscontro positivo o negativo
 if(presence === "Sei invitato"){  // se nella ricerca di prima la variabile si è "riempita" stampo "benvenuto alla festa"
     showParty.classList.add("show");
-    welcomeName.innerHTML = `Welcome to the party ${mailUser} (or not?)`; 
+    welcomeName.innerHTML = `Welcome to the party ${mailUser} </br> (or not?)`; 
     console.log("Benvenuto alla festa!!")
 } else { // se la mail non corrisponde a nessuno degli elementi e quindi la variabile è rimasta "undefine" allora stampa "Non sei in lista"
     showNotParty.classList.add("show");
-    notWelcomeName.innerHTML = `I am sorry ${mailUser} but:`; 
+    notWelcomeName.innerHTML = `I AM SORRY ${mailUser} BUT:`; 
     console.log("Mi dispiace ma non sei in lista")
 }
 
