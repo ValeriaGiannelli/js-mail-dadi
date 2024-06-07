@@ -11,31 +11,29 @@ console.log("la mail che ha inserito l'utente è:", mailUser);
 // controllare che la sua mail sia nella lista:
 let presence;
 
-    // estraggo i singoli elementi della lista
+// estraggo i singoli elementi della lista e li confronto con la mail della persona
 for(i = 0; i < mailList.length; i++){
     console.log(mailList[i]);
     
     if(mailUser === mailList[i]){  // confronto la mail della persona con la lista
-        presence = "Sei invitato"; //salvo nella variabile un dato "positivo"
+        presence = "Sei invitato"; //salvo nella variabile un dato "positivo" se c'è corrispondenza
     } 
 }
 
 // console.log(presence);
 
-if(presence === "Sei invitato"){
+
+// Capire se la ricerca precedente mi ha dato un riscontro positivo o negativo
+if(presence === "Sei invitato"){  // se nella ricerca di prima la variabile si è "riempita" stampo "benvenuto alla festa"
     console.log("Benvenuto alla festa!!")
-} else {
+} else { // se la mail non corrisponde a nessuno degli elementi e quindi la variabile è rimasta "undefine" allora stampa "Non sei in lista"
     console.log("Mi dispiace ma non sei in lista")
 }
+
+
 
    
 
 
-    // se diverso, procedo con il prossimo
 
-
-    // se trovo un elemento simile chiudo la ricerca e stampo "benvenuto alla festa"
-
-
-
-    // se la mail non corrisponde a nessuno degli elementi allora stampa "Non sei invitato"
+    
