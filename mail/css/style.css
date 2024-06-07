@@ -6,14 +6,13 @@
 }
 
 
-/* classe da aggiungere con JS a seconda della condizione */
-.show{
-    display: block;
-}
-
-
 /* caratteristiche dei div*/
 
 .party, .not_party{
     display: none;
+}
+
+/* classe da aggiungere con JS a seconda della condizione */
+.show{
+    display: block;
 }
