@@ -2,11 +2,13 @@
 
 
 // genero un numero random per utente
-
+let userNumber = Math.floor(Math.random()*6+1);
+console.log("Il numero casauale della persona è:", userNumber);
 
 
 // genero un numero random per PC
-
+let pcNumber = Math.floor(Math.random()*6+1);
+console.log("Il numero casauale del PC è:", pcNumber);
 
 
 // confronto i due numeri:
