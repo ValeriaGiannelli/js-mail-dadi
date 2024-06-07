@@ -13,8 +13,12 @@ console.log("Il numero casauale del PC è:", pcNumber);
 
 // confronto i due numeri:
 
-    // se numero utente più alto -> scrivi "Utente ha vinto"
+if(userNumber > pcNumber){ // se numero utente più alto -> scrivi "Utente ha vinto"
+    console.log("Hai vintooo!");
+} else if(userNumber < pcNumber){ // se numero utente più basso -> "Ha vinto il PC"
+    console.log("Ha vinto il PC");
+} else { //altrimenti il risultato è pari
+    console.log("Pari patta");
+}
 
 
-
-    // altrimenti -> "Ha vinto il PC"
