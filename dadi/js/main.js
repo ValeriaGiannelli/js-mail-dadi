@@ -10,6 +10,14 @@ console.log("Il numero casauale della persona è:", userNumber);
 let pcNumber = Math.floor(Math.random()*6+1);
 console.log("Il numero casauale del PC è:", pcNumber);
 
+// prendo gli elementi html dove scriverò numeri random e risultato
+const showUserNumber = document.getElementById("user_number");
+const showPcNumber = document.getElementById("pc_number");
+const showResult = document.getElementById("result");
+
+// aggiungo agli elementi i numeri random
+showUserNumber.innerHTML = `Il numero della persona è: ${userNumber}`;
+showPcNumber.innerHTML = `Il numero del PC è: ${pcNumber}`;
 
 // confronto i due numeri:
 
