@@ -16,12 +16,17 @@ for(i = 0; i < mailList.length; i++){
     console.log(mailList[i]);
     
     if(mailUser === mailList[i]){  // confronto la mail della persona con la lista
-        presence= "Sei invitato";
+        presence = "Sei invitato"; //salvo nella variabile un dato "positivo"
     } 
 }
 
-console.log(presence);
+// console.log(presence);
 
+if(presence === "Sei invitato"){
+    console.log("Benvenuto alla festa!!")
+} else {
+    console.log("Mi dispiace ma non sei in lista")
+}
 
    
 
