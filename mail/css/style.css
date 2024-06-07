@@ -1,0 +1,19 @@
+/* css generale */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* classe da aggiungere con JS a seconda della condizione */
+.show{
+    display: block;
+}
+
+
+/* caratteristiche dei div*/
+
+.party, .not_party{
+    display: none;
+}
