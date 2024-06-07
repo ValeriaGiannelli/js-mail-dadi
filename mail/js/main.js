@@ -9,15 +9,21 @@ const mailUser = prompt("Inserisci la tua mail:");
 console.log("la mail che ha inserito l'utente è:", mailUser);
 
 // controllare che la sua mail sia nella lista:
+let presence;
 
     // estraggo i singoli elementi della lista
 for(i = 0; i < mailList.length; i++){
     console.log(mailList[i]);
-
+    
+    if(mailUser === mailList[i]){  // confronto la mail della persona con la lista
+        presence= "Sei invitato";
+    } 
 }
 
+console.log(presence);
 
-    // confronto il primo con la mail della persona
+
+   
 
 
     // se diverso, procedo con il prossimo
